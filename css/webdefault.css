@@ -1,0 +1,164 @@
+/* APPLY STYLING HERE FOR ENTIRE SHEET*/
+* {
+    box-sizing: border-box;
+    overflow: auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+    text-align: center;
+    font-family: Helvetica, serif;
+}
+/**HTML DOCUMENT**/
+html {
+    height: 100%;
+    width: 100%;
+}
+/****BODY ELEMENT****/
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/metalBackground.jpeg");
+}
+/******HEADER ELEMENT******/
+header {
+    height: 15%;
+    width: 100%;
+    background-image: url("../images/tech.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 65%;
+    color: white;
+}
+/******HEADER SPECIAL CLASS ELEMENTS ON MOBILE******/
+@media only screen and (max-width: 655px) {
+
+    .headerTitle h1 {
+        font-size: 100%;
+        -webkit-text-stroke: 0.5px black;
+    }
+
+    .headerTitle nav{
+        padding: 0;
+    }
+
+    .headerTitle a {
+        font-size: 80%;
+    }
+}
+/******HEADER SPECIAL CLASS ELEMENTS ON DESKTOP******/
+.headerTitle h1 {
+    font-size: 150%;
+    -webkit-text-stroke: 1px black;
+    overflow: -moz-hidden-unscrollable;
+}
+.headerTitle nav{
+    padding-top: 20px;
+}
+.headerTitle a {
+    font-size: 115%;
+    color: white;
+    text-decoration: none;
+}
+.headerTitle a:hover {
+    text-decoration: underline;
+    color: deepskyblue;
+    font-size:135%;
+}
+/********NAV LIST ITEMS********/
+nav li {
+    display: inline-block;
+    padding-right: 20px;
+}
+/******MAIN ELEMENT******/
+main {
+    height: 80%;
+    width: 100%;
+}
+/************BUTTON ELEMENTS ON HOVER************/
+button:hover {
+    opacity: 0.5;
+}
+/******FOOTER ELEMENT******/
+footer {
+    height: 5%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 60%;
+}
+/**********SPECIAL CLASSES**********/
+/************CONTENT CLASS (GENERIC CLASS FOR MOST SECTIONS ON SITE)************/
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/**************CONTENT CLASS IMAGES (GENERIC FOR MOST IMAGES ON SITE)**************/
+.content img {
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: gray 0 0 5px;
+}
+/************SPEAKERS CLASS (FOR KEYNOTE SPEAKER PAGE)************/
+.speakers{
+    height: 100%;
+    width: 100%;
+}
+/************MENUS CLASS (FOR MEALS PAGE)************/
+.menus {
+    margin: auto;
+}
+/********TABLE ELEMENTS AND TABLE CLASS SPECIAL ELEMENTS********/
+table {
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    border-collapse: collapse;
+    word-wrap: normal;
+    border: 3px solid black;
+}
+/**********TABLE ELEMENTS AND TABLE CLASS SPECIAL ELEMENTS ON MOBILE**********/
+@media only screen and (max-width: 985px) {
+    th {
+        font-size: 15px;
+    }
+    td {
+        font-size: 10px;
+    }
+    .titleData {
+        font-size: 20px;
+    }
+}
+/**********TABLE ELEMENTS AND TABLE CLASS SPECIAL ELEMENTS ON DESKTOP**********/
+th {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 130%;
+}
+
+tr {
+    border: 2px solid black;
+    font-size: 110%;
+}
+
+td {
+    font-weight: bold;
+    align-content: center;
+    text-align: center;
+}
+
+td img {
+    max-width: 100%;
+}
+
+.descriptionData {
+    text-align: left;
+    text-anchor: start;
+}
+
+.titleData {
+    font-weight: bold;
+    font-size: 60px;
+}
